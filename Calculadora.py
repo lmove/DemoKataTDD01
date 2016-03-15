@@ -6,7 +6,9 @@ class Calculadora:
         elif len(cadena) == 1:
             return 1
         else:
-            if "," in cadena:
+            if "," in cadena or ":" in cadena or "&" in cadena:
+                cadena = cadena.replace(":", ",")
+                cadena = cadena.replace("&", ",")
                 array = cadena.split(",")
                 cont = 0
 
