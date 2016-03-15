@@ -6,4 +6,5 @@ class Calculadora:
         elif len(cadena) == 1:
             return 1
         else:
-            return int(cadena[0]) + int(cadena[2])
+            if "," in cadena:
+                return int(cadena[0]) + int(cadena[2])
