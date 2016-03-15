@@ -7,4 +7,10 @@ class Calculadora:
             return 1
         else:
             if "," in cadena:
-                return int(cadena[0]) + int(cadena[2])
+                array = cadena.split(",")
+                cont = 0
+
+                for a in array:
+                    cont += int(a)
+
+                return cont
